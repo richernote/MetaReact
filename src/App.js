@@ -1,15 +1,10 @@
-import Header from "./Header"
-import Aside from  "./Aside"
+import logo from './logo.svg';
+import './App.css';
 
-function App() {
-    
-    return (
-        <>
-            <Header title="Welcome"/>
-            <Aside />
-        </>
-    );
+function App(props) {
+  return (
+    <h1>{props.title}</h1>
+  )
 }
 
 export default App;
-
