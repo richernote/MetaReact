@@ -1,10 +1,14 @@
-import logo from './logo.svg';
 import './App.css';
+import Header from './Header'
 
-function App(props) {
+function App() {
   return (
-    <h1>{props.title}</h1>
-  )
+    <>
+      <Header name="Timmy" />
+      <Header name="Rick" />
+    
+    </>
+    )
 }
 
 export default App;
