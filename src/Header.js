@@ -1,6 +1,6 @@
 const Header = (props) => {
     return (
-        <h1>Hello, { props.name }</h1>
+        <h1>{ props.statement }</h1>
     )
 }
 
