@@ -1,17 +1,25 @@
+import React from 'react';
 import './App.css';
-import Header from './Header'
-import Card from './Card'
+import Heading from "./Heading"
+import ModeToggler from "./ModeToggler"
 
 function App() {
+  const date = new Date()
+
+  const [word, setWord] = React.useState("Eat")
+
+  function handleClick(){
+    setWord("Dine")
+
+  }
+
   return (
     <>
-      <Header statement="Task: Add three Card elements" />
-      <Card h2="First Card's h2" h3="First Card's h3"/>
-      <Card h2="Second Card's h2" h3="Second Card's h3"/>
-      <Card h2="Third Card's h2" h3="Third Card's h3"/>
-
+      <Heading message={word + " at Little Lemon"} />
+      <button onClick={ handleClick }>Click</button>
+      {/* <ModeToggler /> */}
     </>
-    )
+  )
 }
 
 export default App;
