@@ -1,25 +1,24 @@
 import React from 'react';
 import './App.css';
-import Heading from "./Heading"
 
 function App() {
-  let date = new Date().toLocaleTimeString()
-  const [word, setWord] = React.useState(date)
 
-  let timer = (() => {
-    return(
-      setTimeout(() => {
-        date = new Date()
-        setWord(date.toLocaleTimeString())
-      }, 1000)
-    )
-  })()
- 
-  
+  handleClick = () => {
+    randomNumber = Math().floor(Math.random() * 3) + 1
+    console.log(randomNumber)
+
+
+  }
 
   return (
     <>
-      <Heading message={word} />
+      <h1>
+      "Task: Add a button and handle a click event"
+      </h1>
+
+      <button onClick={ handleClick }>
+        Etner a Number between 1 and 3
+      </button>
     </>
   )
 }
